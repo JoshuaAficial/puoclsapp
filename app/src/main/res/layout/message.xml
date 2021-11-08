@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutformessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/recieverchatdrawble">
+
+        <TextView
+            android:id="@+id/message_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppinsbold"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/message_text"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@id/message_text"
+            android:fontFamily="@font/poppinsmedium"
+            android:padding="7dp"
+            android:text="20:09"
+            android:textColor="#434343"
+            android:textSize="10sp"  />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="7dp"
+            android:text="Sender Message Display Here "
+            android:textColor="@color/textColor"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

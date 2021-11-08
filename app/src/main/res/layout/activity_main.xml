@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFF"
+    tools:context=".MainActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbarofviewprofile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backbuttonofviewprofile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint">
+
+            </ImageButton>
+
+
+            <TextView
+                android:id="@+id/myapptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="PROFILE"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/viewusername"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/viewuserimage"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="130dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/defaultprofile"
+            android:id="@+id/viewuserimageinimageview"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/logoofviewprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/viewusername"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-40dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:tint="#716e6e" />
+
+
+    <EditText
+        android:id="@+id/viewusername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Username"
+        android:inputType="textCapWords"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/buttonbackground2"
+        android:fontFamily="@font/poppinsmedium"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <android.widget.Button
+        android:id="@+id/movetoupdateprofile"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logoutBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonbackground2"
+        android:fontFamily="@font/poppinsmedium"
+        android:onClick="update"
+        android:text="Update profile"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+</RelativeLayout>

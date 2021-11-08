@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PU-OCLS</string>
+    <string name="loginhere">Already have an account? <u>Login</u></string>
+    <string name="signuphere">Create a new account? <u>Sign Up</u></string>
+</resources>
